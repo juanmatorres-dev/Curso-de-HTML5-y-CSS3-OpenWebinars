@@ -9,13 +9,181 @@
         h1 {
             text-align: center;
         }
+
+        legend {
+            border: 2px solid;
+            background-color: #ffffff;
+        }
+
+        fieldset {
+            margin-top: 20px;
+        }
+
+        .datosPersonales {
+            background-color: rgba(203,203,203,255);
+        }
+
+        .formaDeAcceso {
+            background-color: rgba(255,227,194,255);
+        }
+
+        .documentosAdjuntos {
+            background-color: rgba(239,127,127,255);
+        }
+
+        .privincia {
+            width: 85%;
+        }
+
+        .direccion {
+            width: 90%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
     </style>
 </head>
 <body>
     <h1>HOJA DE INSERCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
 
     <form>
-        
+        <fieldset class="datosPersonales">
+            <legend>Datos Personales</legend>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="nombre">Nombre :</label></td>    
+                        <td><label for="apellidos">Apellidos :</label></td>
+                        <td><label for="DNI">DNI</label></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre">
+                        </td>
+                        
+                        <td>
+                            <input type="text" name="apellidos">
+                        </td>
+
+                        <td>
+                            <input type="text" name="DNI">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="localidadNacimiento">Localidad Nacimiento</label>
+                        </td>
+
+                        <td>
+                            <label for="provincia">Provincia</label>
+                        </td>
+
+                        <td>
+                            <label for="fechaNacimiento">Fecha Nacimiento</label>
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>
+                            <input type="text" name="localidadNacimiento">
+                        </td>
+
+                        <td>
+                            <select name="provincia" class="privincia">
+                                <option disabled selected>- selecciona -</option>
+                                <optgroup label="Andalucía">
+                                    <option>Almería</option>
+                                    <option>Granada</option>
+                                    <option>Málaga</option>
+                                </optgroup>
+                                
+                            </select>
+                        </td>
+
+                        <td>
+                            <input type="date" name="fechaNacimiento">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="direccion">Dirección</label>
+                        </td>
+
+                        <td>
+                            <label for="codigoPostal">Código Postal</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" name="direccion" class="direccion">
+                        </td>
+
+                        <td>
+                            <input type="number" name="codigoPostal">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </fieldset>
+
+        <fieldset class="formaDeAcceso">
+            <legend>Forma de Acceso</legend>
+
+            <ul>
+                <li> 
+                    <label for="tipo"></label>
+                    <input type="radio" name="tipo">Direct
+                    <ul>
+                        <label for="direct_tipo"></label>
+                        <li><input type="radio" name="direct_tipo">Bachillerato LOGSE. Modalidad <input type="text" name="tipo"></li>
+                        <li><input type="radio" name="direct_tipo">Bachillerato Experimental</li>
+                        <li><input type="radio" name="direct_tipo">COUP. Opción <input type="text" name="tipo"> </li>
+                        <li><input type="radio" name="direct_tipo">FP2</li>
+                        <li><input type="radio" name="direct_tipo">Otros (especifique) <input type="text" name="tipo"> </li>
+                    </ul>
+                </li>
+                <li><input type="radio" name="tipo">Prueba Libre</li>
+            </ul>
+
+        </fieldset>
+
+        <fieldset class="documentosAdjuntos">
+            <legend>Documentos Adjuntados</legend>
+
+            <label for="documentosAdjuntos"></label>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="documentosAdjuntos"> Fotocopia DNI
+                        </td>
+
+                        <td>
+                            <input type="checkbox" name="documentosAdjuntos"> Certificado Académico
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" name="documentosAdjuntos"> Otros documentos (especifique) <input type="text" name="documentosAdjuntos">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </fieldset>
     </form>
 
 </body>
