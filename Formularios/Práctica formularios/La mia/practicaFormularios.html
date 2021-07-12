@@ -19,6 +19,10 @@
             margin-top: 20px;
         }
 
+        .btnEnviar {
+            margin-top: 20px;
+        }
+
         .datosPersonales {
             background-color: rgba(203,203,203,255);
         }
@@ -48,7 +52,7 @@
 <body>
     <h1>HOJA DE INSERCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
 
-    <form>
+    <form method="POST" action="procesarDatos.php">
         <fieldset class="datosPersonales">
             <legend>Datos Personales</legend>
 
@@ -184,6 +188,9 @@
             </table>
 
         </fieldset>
+
+        <input class="btnEnviar" type="submit" value="Enviar Solicitud"> 
+
     </form>
 
 </body>
