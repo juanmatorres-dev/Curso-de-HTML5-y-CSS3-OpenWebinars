@@ -35,7 +35,7 @@
             background-color: rgba(239,127,127,255);
         }
 
-        .privincia {
+        .provincia {
             width: 85%;
         }
 
@@ -50,7 +50,8 @@
     </style>
 </head>
 <body>
-    <h1>HOJA DE INSERCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <h1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
 
     <form method="POST" action="procesarDatos.php">
         <fieldset class="datosPersonales">
@@ -99,7 +100,7 @@
                         </td>
 
                         <td>
-                            <select name="provincia" class="privincia">
+                            <select name="provincia" class="provincia">
                                 <option disabled selected>- selecciona -</option>
                                 <optgroup label="Andalucía">
                                     <option>Almería</option>
@@ -149,14 +150,14 @@
                     <input type="radio" name="tipo">Direct
                     <ul>
                         <label for="direct_tipo"></label>
-                        <li><input type="radio" name="direct_tipo">Bachillerato LOGSE. Modalidad <input type="text" name="tipo"></li>
-                        <li><input type="radio" name="direct_tipo">Bachillerato Experimental</li>
-                        <li><input type="radio" name="direct_tipo">COUP. Opción <input type="text" name="tipo"> </li>
-                        <li><input type="radio" name="direct_tipo">FP2</li>
-                        <li><input type="radio" name="direct_tipo">Otros (especifique) <input type="text" name="tipo"> </li>
+                        <li><input type="radio" name="direct_tipo" value="bachilleratoLOGSE.Modalidad">Bachillerato LOGSE. Modalidad <input type="text" name="tipo"></li>
+                        <li><input type="radio" name="direct_tipo" value="bachilleratoExperimental">Bachillerato Experimental</li>
+                        <li><input type="radio" name="direct_tipo" value="COUP.Opcion">COUP. Opción <input type="text" name="tipo"> </li>
+                        <li><input type="radio" name="direct_tipo" value="FP2">FP2</li>
+                        <li><input type="radio" name="direct_tipo" value="otros">Otros (especifique) <input type="text" name="tipo"> </li>
                     </ul>
                 </li>
-                <li><input type="radio" name="tipo">Prueba Libre</li>
+                <li><input type="radio" name="tipo" value="pruebaLibre">Prueba Libre</li>
             </ul>
 
         </fieldset>
@@ -170,11 +171,11 @@
                 <tbody>
                     <tr>
                         <td>
-                            <input type="checkbox" name="documentosAdjuntos"> Fotocopia DNI
+                            <input type="checkbox" name="documentosAdjuntos" value="fotocopiaDNI"> Fotocopia DNI
                         </td>
 
                         <td>
-                            <input type="checkbox" name="documentosAdjuntos"> Certificado Académico
+                            <input type="checkbox" name="documentosAdjuntos" value="certificadoAcademico"> Certificado Académico
                         </td>
                     </tr>
 
