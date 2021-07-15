@@ -1,0 +1,62 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+thead>tr>th[colspan="3"], thead>tr>th[colspan="2"] {
+    background-color: blue;
+}
+
+thead>tr>th>img {
+    height: 60px;
+    width: 50px;
+}
+
+tbody>tr>.primera {
+    background-color: red;
+    color: white;
+}
+
+.gb {
+    background-color: gray;
+    text-align: center;
+}
+
+.gb p {
+    font-size: 30px;
+}
+
+#listas td ul li {
+    color: red;
+}
+
+#listas td[colspan="2"] {
+    background-color:  blue;
+}
+
+tbody>tr>th[colspan="3"] , tbody>tr>th[colspan="2"] {
+    background-color: blue;
+}
+
+#cinco {
+    background-color: yellow;
+    padding: 50px;
+}
+
+th[colspan="3"][rowspan="2"] {
+    padding: 60px;
+}
