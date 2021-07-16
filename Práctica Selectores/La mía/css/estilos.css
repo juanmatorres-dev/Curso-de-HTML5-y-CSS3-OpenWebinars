@@ -4,16 +4,11 @@ h1 {
 
 table {
     margin: 0 auto;
-    border: 1px solid black;
     width: 50%;
     border-collapse: collapse;
 }
 
-th {
-    border: 1px solid black;
-}
-
-td {
+th ,td {
     border: 1px solid black;
 }
 
