@@ -1,6 +1,9 @@
+a {
+  text-decoration: none;
+}
+
 a:link {
   color: green;
-  text-decoration: none;
 }
 
 a:visited {
@@ -37,7 +40,7 @@ label::after {
   color: red;
 }
 
-p>input {
+input:required {
   border: 1px solid red;
   padding: 10px;
 }
