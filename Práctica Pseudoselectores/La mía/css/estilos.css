@@ -3,6 +3,10 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: red;
+}
+
 
 table , th , td {
   border: 1px solid black;
@@ -13,3 +17,31 @@ thead>tr>th::first-letter {
   font-size: 2em;
 }
 
+td:first-of-type {
+  background-color: green;
+}
+
+/* Para el RECREO se puede hacer también así : */
+/*
+[colspan="5"] {
+  background-color: yellow;
+}
+*/
+
+tr:nth-child(3)>th {
+  background-color: yellow;
+}
+
+label::after {
+  content: "*";
+  color: red;
+}
+
+p>input {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+tr>th:last-child:hover , tr>td:last-child:hover {
+  font-size: 2em;
+}
