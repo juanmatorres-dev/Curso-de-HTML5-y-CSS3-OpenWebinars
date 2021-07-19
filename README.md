@@ -6,3 +6,9 @@
 
 Nota : Este repositorio contiene archivos hechos por mí y otros descargados del curso de OpenWebinars ( pero hay algunos modificados ) .
 Archivos originales : [https://github.com/pekechis/OpenWebinars_Introduccion_HTML_CSS](https://github.com/pekechis/OpenWebinars_Introduccion_HTML_CSS)
+
+# Fin del curso
+
+[Mi perfil de OpenWebinars](https://openwebinars.net/@juan-manuel-torres-martinez/)
+
+[Certificado](https://openwebinars.net/cert/2Nejj)
